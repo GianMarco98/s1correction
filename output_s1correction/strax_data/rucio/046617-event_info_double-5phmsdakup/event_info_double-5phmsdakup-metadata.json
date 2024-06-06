@@ -1,0 +1,293 @@
+{
+    "chunk_target_size_mb": 200,
+    "chunks": [
+        {
+            "chunk_i": 0,
+            "end": 1659679789303819520,
+            "filename": "event_info_double-5phmsdakup-000000",
+            "filesize": 14743988,
+            "first_endtime": 1659676182008819380,
+            "first_time": 1659676182005929266,
+            "last_endtime": 1659679785237586340,
+            "last_time": 1659679785234864496,
+            "n": 32370,
+            "nbytes": 19939920,
+            "run_id": "046617",
+            "start": 1659676182000000000,
+            "subruns": null
+        }
+    ],
+    "compressor": "blosc",
+    "data_kind": "events",
+    "data_type": "event_info_double",
+    "dtype": "[(('Start time since unix epoch [ns]', 'time'), '<i8'), (('Exclusive end time since unix epoch [ns]', 'endtime'), '<i8'), (('Corrected area of main S1 [PE]', 'cs1_a'), '<f4'), (('Corrected area of main S1 (before LY correction) [PE]', 'cs1_a_wo_timecorr'), '<f4'), (('Corrected area of main S2 (before SEG/EE + photon ionization, after S2 xy + elife) [PE]', 'cs2_a_wo_timecorr'), '<f4'), (('Fraction of area seen by the top PMT array for corrected main S2 (before SEG/EE + photon ionization, after S2 xy + elife)', 'cs2_area_fraction_top_wo_timecorr'), '<f4'), (('Corrected area of main S2 (before photon ionization + elife, after S2 xy + SEG/EE) [PE]', 'cs2_wo_picorr'), '<f4'), (('Fraction of area seen by the top PMT array for corrected main S2 (before photon ionization + elife, after S2 xy + SEG/EE)', 'cs2_area_fraction_top_wo_picorr'), '<f4'), (('Corrected area of main S2 (before elife, after S2 xy + SEG/EE + photon ionization) [PE]', 'cs2_a_wo_elifecorr'), '<f4'), (('Fraction of area seen by the top PMT array for corrected main S2 (before elife, after S2 xy + SEG/EE + photon ionization)', 'cs2_area_fraction_top_wo_elifecorr'), '<f4'), (('Corrected area of main S2 [PE]', 'cs2_a'), '<f4'), (('Fraction of area seen by the top PMT array for corrected main S2', 'cs2_a_area_fraction_top'), '<f4'), (('Corrected area of alternate S1 [PE]', 'cs1_b'), '<f4'), (('Corrected area of alternate S1 (before LY correction) [PE]', 'cs1_b_wo_timecorr'), '<f4'), (('Corrected area of alternate S2 (before SEG/EE + photon ionization, after S2 xy + elife) [PE]', 'cs2_b_wo_timecorr'), '<f4'), (('Fraction of area seen by the top PMT array for corrected alternate S2 (before SEG/EE + photon ionization, after S2 xy + elife)', 'alt_cs2_area_fraction_top_wo_timecorr'), '<f4'), (('Corrected area of alternate S2 (before photon ionization + elife, after S2 xy + SEG/EE) [PE]', 'alt_cs2_wo_picorr'), '<f4'), (('Fraction of area seen by the top PMT array for corrected alternate S2 (before photon ionization + elife, after S2 xy + SEG/EE)', 'alt_cs2_area_fraction_top_wo_picorr'), '<f4'), (('Corrected area of alternate S2 (before elife, after S2 xy + SEG/EE + photon ionization) [PE]', 'cs2_b_wo_elifecorr'), '<f4'), (('Fraction of area seen by the top PMT array for corrected alternate S2 (before elife, after S2 xy + SEG/EE + photon ionization)', 'alt_cs2_area_fraction_top_wo_elifecorr'), '<f4'), (('Corrected area of alternate S2 [PE]', 'cs2_b'), '<f4'), (('Fraction of area seen by the top PMT array for corrected alternate S2', 'cs2_b_area_fraction_top'), '<f4'), (('Energy in light signal [keVee]', 'e_light'), '<f4'), (('Energy in charge signal [keVee]', 'e_charge'), '<f4'), (('Energy estimate [keVee]', 'e_ces'), '<f4'), (('Number of peaks in the event', 'n_peaks'), '<i4'), (('Drift time between main S1 and S2 in ns', 'drift_time'), '<f4'), (('Event number in this dataset', 'event_number'), '<i8'), (('Main S1 peak index in event', 's1_a_index'), '<i4'), (('Alternate S1 peak index in event', 's1_b_index'), '<i4'), (('Main S1 start time since unix epoch [ns]', 's1_a_time'), '<i8'), (('Alternate S1 start time since unix epoch [ns]', 's1_b_time'), '<i8'), (('Main S1 weighted center time since unix epoch [ns]', 's1_a_center_time'), '<i8'), (('Alternate S1 weighted center time since unix epoch [ns]', 's1_b_center_time'), '<i8'), (('Main S1 end time since unix epoch [ns]', 's1_a_endtime'), '<i8'), (('Alternate S1 end time since unix epoch [ns]', 's1_b_endtime'), '<i8'), (('Main S1 area, uncorrected [PE]', 's1_a_area'), '<f4'), (('Alternate S1 area, uncorrected [PE]', 's1_b_area'), '<f4'), (('Main S1 count of contributing PMTs', 's1_a_n_channels'), '<i2'), (('Alternate S1 count of contributing PMTs', 's1_b_n_channels'), '<i2'), (('Main S1 count of hits contributing at least one sample to the peak', 's1_a_n_hits'), '<i2'), (('Alternate S1 count of hits contributing at least one sample to the peak', 's1_b_n_hits'), '<i2'), (('Main S1 number of competing peaks', 's1_a_n_competing'), '<i4'), (('Alternate S1 number of competing peaks', 's1_b_n_competing'), '<i4'), (('Main S1 PMT number which contributes the most PE', 's1_a_max_pmt'), '<i2'), (('Alternate S1 PMT number which contributes the most PE', 's1_b_max_pmt'), '<i2'), (('Main S1 area in the largest-contributing PMT (PE)', 's1_a_max_pmt_area'), '<f4'), (('Alternate S1 area in the largest-contributing PMT (PE)', 's1_b_max_pmt_area'), '<f4'), (('Main S1 width, 50% area [ns]', 's1_a_range_50p_area'), '<f4'), (('Alternate S1 width, 50% area [ns]', 's1_b_range_50p_area'), '<f4'), (('Main S1 width, 90% area [ns]', 's1_a_range_90p_area'), '<f4'), (('Alternate S1 width, 90% area [ns]', 's1_b_range_90p_area'), '<f4'), (('Main S1 time between 10% and 50% area quantiles [ns]', 's1_a_rise_time'), '<f4'), (('Alternate S1 time between 10% and 50% area quantiles [ns]', 's1_b_rise_time'), '<f4'), (('Main S1 fraction of area seen by the top PMT array', 's1_a_area_fraction_top'), '<f4'), (('Alternate S1 fraction of area seen by the top PMT array', 's1_b_area_fraction_top'), '<f4'), (('Main S1 Channel within tight range of mean', 's1_a_tight_coincidence'), '<i2'), (('Alternate S1 Channel within tight range of mean', 's1_b_tight_coincidence'), '<i2'), (('Main S1 Total number of saturated channels', 's1_a_n_saturated_channels'), '<i2'), (('Alternate S1 Total number of saturated channels', 's1_b_n_saturated_channels'), '<i2'), (('Drift time using alternate S1 [ns]', 's1_b_interaction_drift_time'), '<f4'), (('Time between main and alternate S1 [ns]', 'ds_s1_dt'), '<i4'), (('Main S2 peak index in event', 's2_a_index'), '<i4'), (('Alternate S2 peak index in event', 's2_b_index'), '<i4'), (('Main S2 start time since unix epoch [ns]', 's2_a_time'), '<i8'), (('Alternate S2 start time since unix epoch [ns]', 's2_b_time'), '<i8'), (('Main S2 weighted center time since unix epoch [ns]', 's2_a_center_time'), '<i8'), (('Alternate S2 weighted center time since unix epoch [ns]', 's2_b_center_time'), '<i8'), (('Main S2 end time since unix epoch [ns]', 's2_a_endtime'), '<i8'), (('Alternate S2 end time since unix epoch [ns]', 's2_b_endtime'), '<i8'), (('Main S2 area, uncorrected [PE]', 's2_a_area'), '<f4'), (('Alternate S2 area, uncorrected [PE]', 's2_b_area'), '<f4'), (('Main S2 count of contributing PMTs', 's2_a_n_channels'), '<i2'), (('Alternate S2 count of contributing PMTs', 's2_b_n_channels'), '<i2'), (('Main S2 count of hits contributing at least one sample to the peak', 's2_a_n_hits'), '<i2'), (('Alternate S2 count of hits contributing at least one sample to the peak', 's2_b_n_hits'), '<i2'), (('Main S2 number of competing peaks', 's2_a_n_competing'), '<i4'), (('Alternate S2 number of competing peaks', 's2_b_n_competing'), '<i4'), (('Main S2 PMT number which contributes the most PE', 's2_a_max_pmt'), '<i2'), (('Alternate S2 PMT number which contributes the most PE', 's2_b_max_pmt'), '<i2'), (('Main S2 area in the largest-contributing PMT (PE)', 's2_a_max_pmt_area'), '<f4'), (('Alternate S2 area in the largest-contributing PMT (PE)', 's2_b_max_pmt_area'), '<f4'), (('Main S2 width, 50% area [ns]', 's2_a_range_50p_area'), '<f4'), (('Alternate S2 width, 50% area [ns]', 's2_b_range_50p_area'), '<f4'), (('Main S2 width, 90% area [ns]', 's2_a_range_90p_area'), '<f4'), (('Alternate S2 width, 90% area [ns]', 's2_b_range_90p_area'), '<f4'), (('Main S2 time between 10% and 50% area quantiles [ns]', 's2_a_rise_time'), '<f4'), (('Alternate S2 time between 10% and 50% area quantiles [ns]', 's2_b_rise_time'), '<f4'), (('Main S2 fraction of area seen by the top PMT array', 's2_a_area_fraction_top'), '<f4'), (('Alternate S2 fraction of area seen by the top PMT array', 's2_b_area_fraction_top'), '<f4'), (('Main S2 Channel within tight range of mean', 's2_a_tight_coincidence'), '<i2'), (('Alternate S2 Channel within tight range of mean', 's2_b_tight_coincidence'), '<i2'), (('Main S2 Total number of saturated channels', 's2_a_n_saturated_channels'), '<i2'), (('Alternate S2 Total number of saturated channels', 's2_b_n_saturated_channels'), '<i2'), (('Drift time using alternate S2 [ns]', 's2_b_interaction_drift_time'), '<f4'), (('Time between main and alternate S2 [ns]', 'ds_s2_dt'), '<i4'), (('Main S1 largest time difference between apexes of hits [ns]', 's1_a_max_diff'), '<i4'), (('Alternate S1 largest time difference between apexes of hits [ns]', 's1_b_max_diff'), '<i4'), (('Main S1 smallest time difference between apexes of hits [ns]', 's1_a_min_diff'), '<i4'), (('Alternate S1 smallest time difference between apexes of hits [ns]', 's1_b_min_diff'), '<i4'), (('Main S2 reconstructed X position, uncorrected [cm]', 's2_a_x'), '<f4'), (('Main S2 reconstructed Y position, uncorrected [cm]', 's2_a_y'), '<f4'), (('Alternate S2 reconstructed X position, uncorrected [cm]', 's2_b_x'), '<f4'), (('Alternate S2 reconstructed Y position, uncorrected [cm]', 's2_b_y'), '<f4'), (('Sum of areas before Main S2 [PE]', 'area_before_main_s2'), '<f4'), (('The largest S2 before the Main S2 [PE]', 'large_s2_before_main_s2'), '<f4'), (('Main S2 cnn-reconstructed X position, uncorrected [cm]', 's2_a_x_cnn'), '<f4'), (('Main S2 cnn-reconstructed Y position, uncorrected [cm]', 's2_a_y_cnn'), '<f4'), (('Alternate S2 cnn-reconstructed X position, uncorrected [cm]', 's2_b_x_cnn'), '<f4'), (('Alternate S2 cnn-reconstructed Y position, uncorrected [cm]', 's2_b_y_cnn'), '<f4'), (('Main S2 gcn-reconstructed X position, uncorrected [cm]', 's2_a_x_gcn'), '<f4'), (('Main S2 gcn-reconstructed Y position, uncorrected [cm]', 's2_a_y_gcn'), '<f4'), (('Alternate S2 gcn-reconstructed X position, uncorrected [cm]', 's2_b_x_gcn'), '<f4'), (('Alternate S2 gcn-reconstructed Y position, uncorrected [cm]', 's2_b_y_gcn'), '<f4'), (('Main S2 mlp-reconstructed X position, uncorrected [cm]', 's2_a_x_mlp'), '<f4'), (('Main S2 mlp-reconstructed Y position, uncorrected [cm]', 's2_a_y_mlp'), '<f4'), (('Alternate S2 mlp-reconstructed X position, uncorrected [cm]', 's2_b_x_mlp'), '<f4'), (('Alternate S2 mlp-reconstructed Y position, uncorrected [cm]', 's2_b_y_mlp'), '<f4'), (('Main interaction x-position, field-distortion corrected (cm)', 'x'), '<f4'), (('Alternative S1 interaction (rel. main S2) x-position, field-distortion corrected (cm)', 's1_b_x_fdc'), '<f4'), (('Alternative S2 interaction (rel. main S1) x-position, field-distortion corrected (cm)', 's2_b_x_fdc'), '<f4'), (('Main interaction y-position, field-distortion corrected (cm)', 'y'), '<f4'), (('Alternative S1 interaction (rel. main S2) y-position, field-distortion corrected (cm)', 's1_b_y_fdc'), '<f4'), (('Alternative S2 interaction (rel. main S1) y-position, field-distortion corrected (cm)', 's2_b_y_fdc'), '<f4'), (('Main interaction r-position, field-distortion corrected (cm)', 'r'), '<f4'), (('Alternative S1 interaction (rel. main S2) r-position, field-distortion corrected (cm)', 's1_b_r_fdc'), '<f4'), (('Alternative S2 interaction (rel. main S1) r-position, field-distortion corrected (cm)', 's2_b_r_fdc'), '<f4'), (('Interaction z-position, corrected to non-uniform drift velocity (cm)', 'z'), '<f4'), (('Interaction z-position, corrected to non-uniform drift velocity, duplicated (cm)', 'z_dv_corr'), '<f4'), (('Alternative S1 z-position (rel. main S2), corrected to non-uniform drift velocity (cm)', 's1_b_z'), '<f4'), (('Alternative S1 z-position (rel. main S2), corrected to non-uniform drift velocity, duplicated (cm)', 's1_b_z_dv_corr'), '<f4'), (('Alternative S2 z-position (rel. main S1), corrected to non-uniform drift velocity (cm)', 's2_b_z'), '<f4'), (('Alternative S2 z-position (rel. main S1), corrected to non-uniform drift velocity, duplicated (cm)', 's2_b_z_dv_corr'), '<f4'), (('Main interaction r-position with observed position (cm)', 'r_naive'), '<f4'), (('Alternative S1 interaction (rel. main S2) r-position with observed position (cm)', 's1_b_r_naive'), '<f4'), (('Alternative S2 interaction (rel. main S1) r-position with observed position (cm)', 's2_b_r_naive'), '<f4'), (('Main interaction z-position with observed position (cm)', 'z_naive'), '<f4'), (('Alternative S1 interaction (rel. main S2) z-position with observed position (cm)', 's1_b_z_naive'), '<f4'), (('Alternative S2 interaction (rel. main S1) z-position with observed position (cm)', 's2_b_z_naive'), '<f4'), (('Correction added to r_naive for field distortion (cm)', 'r_field_distortion_correction'), '<f4'), (('Correction added to alt_s1_r_naive for field distortion (cm)', 's1_b_r_field_distortion_correction'), '<f4'), (('Correction added to alt_s2_r_naive for field distortion (cm)', 's2_b_r_field_distortion_correction'), '<f4'), (('Correction added to z_naive for field distortion (cm)', 'z_field_distortion_correction'), '<f4'), (('Correction added to alt_s1_z_naive for field distortion (cm)', 's1_b_z_field_distortion_correction'), '<f4'), (('Correction added to alt_s2_z_naive for field distortion (cm)', 's2_b_z_field_distortion_correction'), '<f4'), (('Alternative S1 (rel. main S2) interaction angular position (radians)', 's1_b_theta'), '<f4'), (('Alternative S2 (rel. main S1) interaction angular position (radians)', 's2_b_theta'), '<f4'), (('Main interaction angular position (radians)', 'theta'), '<f4'), (('Number of PMTs contributing to the secondary S1 that do not contribute to the main S1', 's1_b_distinct_channels'), '<i4')]",
+    "end": 1659679789303819520,
+    "lineage": {
+        "corrected_areas": [
+            "CorrectedAreas",
+            "0.5.2",
+            {
+                "avg_se_gain": "bodega://se_gain?bodega_version=v1",
+                "cs2_bottom_top_ratio_correction": "xedocs://cs2_bottom_top_ratios?attr=value&run_id=plugin.run_id&version=v2",
+                "default_reconstruction_algorithm": "mlp",
+                "elife": "xedocs://electron_lifetimes?attr=value&run_id=plugin.run_id&version=v9",
+                "region_circular": 60,
+                "region_linear": 28,
+                "rel_extraction_eff": "objects-to-dict://xedocs://rel_extraction_effs?as_list=True&key_attr=partition&partition=ab&partition=cd&run_id=plugin.run_id&sort=partition&value_attr=value&version=v5",
+                "rel_light_yield": "xedocs://relative_light_yield?attr=value&run_id=plugin.run_id&version=v3",
+                "s1_xyz_map": "xedocs://s1_xyz_maps?algorithm=plugin.default_reconstruction_algorithm&attr=map&run_id=plugin.run_id&version=v7",
+                "s2_xy_map": "itp_map://resource://xedocs://s2_xy_maps?algorithm=plugin.default_reconstruction_algorithm&attr=value&run_id=plugin.run_id&version=v7",
+                "se_gain": "objects-to-dict://xedocs://se_gains?as_list=True&key_attr=partition&partition=ab&partition=cd&run_id=plugin.run_id&sort=partition&value_attr=value&version=v5"
+            }
+        ],
+        "distinct_channels": [
+            "DistinctChannels",
+            "0.1.1",
+            {}
+        ],
+        "energy_estimates": [
+            "EnergyEstimates",
+            "0.1.1",
+            {
+                "g1": "bodega://g1?bodega_version=v5",
+                "g2": "bodega://g2?bodega_version=v5",
+                "lxe_w": 0.0137
+            }
+        ],
+        "event_basics": [
+            "EventBasics",
+            "1.3.3",
+            {
+                "allow_posts2_s1s": false,
+                "electron_drift_velocity": "xedocs://electron_drift_velocities?attr=value&run_id=plugin.run_id&version=v3",
+                "event_s1_min_coincidence": 2,
+                "force_alt_s2_in_max_drift_time": true,
+                "force_main_before_alt": false,
+                "max_drift_length": 148.6515
+            }
+        ],
+        "event_info": [
+            "EventInfo",
+            "0.0.2",
+            {
+                "event_info_function": "blinding_v12"
+            }
+        ],
+        "event_info_double": [
+            "EventInfoDouble",
+            "0.1.2",
+            {}
+        ],
+        "event_positions": [
+            "EventPositions",
+            "0.3.0",
+            {
+                "default_reconstruction_algorithm": "mlp",
+                "electron_drift_time_gate": "xedocs://electron_drift_time_gates?attr=value&run_id=plugin.run_id&version=v2",
+                "electron_drift_velocity": "xedocs://electron_drift_velocities?attr=value&run_id=plugin.run_id&version=v3",
+                "fdc_map": "itp_map://resource://format://xedocs://fdc_maps?algorithm=plugin.default_reconstruction_algorithm&attr=value&fmt=json.gz&run_id=plugin.run_id&version=v9",
+                "z_bias_map": "itp_map://resource://xedocs://z_bias_maps?attr=value&fmt=json.gz&run_id=plugin.run_id&version=v1"
+            }
+        ],
+        "events": [
+            "Events",
+            "0.1.1",
+            {
+                "electron_drift_velocity": "xedocs://electron_drift_velocities?attr=value&run_id=plugin.run_id&version=v3",
+                "event_s1_min_coincidence": 2,
+                "exclude_s1_as_triggering_peaks": true,
+                "left_event_extension": 250000,
+                "max_drift_length": 148.6515,
+                "right_event_extension": 250000,
+                "s1_min_coincidence": 2,
+                "trigger_max_competing": 7,
+                "trigger_min_area": 100
+            }
+        ],
+        "lone_hits": [
+            "Peaklets",
+            "1.1.0",
+            {
+                "gain_model": "list-to-array://xedocs://pmt_area_to_pes?as_list=True&attr=value&detector=tpc&run_id=plugin.run_id&sort=pmt&version=v10",
+                "hit_min_amplitude": "list-to-array://xedocs://hit_thresholds?as_list=True&attr=value&detector=tpc&run_id=plugin.run_id&sort=pmt&version=v1",
+                "n_top_pmts": 253,
+                "n_tpc_pmts": 494,
+                "peak_left_extension": 30,
+                "peak_min_pmts": 2,
+                "peak_right_extension": 200,
+                "peak_split_filter_wing_width": 70,
+                "peak_split_gof_threshold": [
+                    null,
+                    [
+                        [
+                            0.5,
+                            1.0
+                        ],
+                        [
+                            6.0,
+                            0.4
+                        ]
+                    ],
+                    [
+                        [
+                            2.5,
+                            1.0
+                        ],
+                        [
+                            5.625,
+                            0.4
+                        ]
+                    ]
+                ],
+                "peak_split_iterations": 20,
+                "peak_split_min_area": 40.0,
+                "peaklet_gap_threshold": 700,
+                "peaklet_max_duration": 10000000,
+                "saturation_correction_on": true,
+                "saturation_min_reference_length": 20,
+                "saturation_reference_length": 100,
+                "sum_waveform_top_array": true,
+                "tight_coincidence_window_left": 50,
+                "tight_coincidence_window_right": 50
+            }
+        ],
+        "merged_s2s": [
+            "MergedS2s",
+            "1.0.2",
+            {
+                "gain_model": "list-to-array://xedocs://pmt_area_to_pes?as_list=True&attr=value&detector=tpc&run_id=plugin.run_id&sort=pmt&version=v10",
+                "merge_without_s1": true,
+                "n_top_pmts": 253,
+                "n_tpc_pmts": 494,
+                "s2_merge_gap_thresholds": [
+                    [
+                        1.7,
+                        26500.0
+                    ],
+                    [
+                        4.0,
+                        2600.0
+                    ],
+                    [
+                        5.0,
+                        0.0
+                    ]
+                ],
+                "s2_merge_max_duration": 50000,
+                "sum_waveform_top_array": true
+            }
+        ],
+        "peak_basics": [
+            "PeakBasics",
+            "0.1.4",
+            {
+                "n_top_pmts": 253
+            }
+        ],
+        "peak_positions": [
+            "PeakPositionsNT",
+            "0.0.0",
+            {
+                "default_reconstruction_algorithm": "mlp"
+            }
+        ],
+        "peak_positions_cnn": [
+            "PeakPositionsCNN",
+            "0.0.1",
+            {
+                "min_reconstruction_area": 10,
+                "n_top_pmts": 253,
+                "tf_model_cnn": "tf://resource://xedocs://posrec_models?attr=value&fmt=abs_path&kind=cnn&run_id=plugin.run_id&version=v7"
+            }
+        ],
+        "peak_positions_gcn": [
+            "PeakPositionsGCN",
+            "0.0.1",
+            {
+                "min_reconstruction_area": 10,
+                "n_top_pmts": 253,
+                "tf_model_gcn": "tf://resource://xedocs://posrec_models?attr=value&fmt=abs_path&kind=gcn&run_id=plugin.run_id&version=v7"
+            }
+        ],
+        "peak_positions_mlp": [
+            "PeakPositionsMLP",
+            "0.0.0",
+            {
+                "min_reconstruction_area": 10,
+                "n_top_pmts": 253,
+                "tf_model_mlp": "tf://resource://xedocs://posrec_models?attr=value&fmt=abs_path&kind=mlp&run_id=plugin.run_id&version=v7"
+            }
+        ],
+        "peak_proximity": [
+            "PeakProximity",
+            "0.4.0",
+            {
+                "min_area_fraction": 0.5,
+                "nearby_window": 10000000,
+                "peak_max_proximity_time": 100000000
+            }
+        ],
+        "peaklet_classification": [
+            "PeakletClassification",
+            "3.0.3",
+            {
+                "n_top_pmts": 253,
+                "s1_flatten_threshold_aft": [
+                    0.6,
+                    100
+                ],
+                "s1_max_rise_time_post100": 200,
+                "s1_min_coincidence": 2,
+                "s1_risetime_aft_parameters": [
+                    -1,
+                    2.6
+                ],
+                "s1_risetime_area_parameters": [
+                    50,
+                    80,
+                    12
+                ],
+                "s2_min_pmts": 4
+            }
+        ],
+        "peaks": [
+            "Peaks",
+            "0.1.2",
+            {
+                "merge_without_s1": true
+            }
+        ],
+        "pulse_counts": [
+            "PulseProcessing",
+            "0.2.3",
+            {
+                "baseline_samples": 40,
+                "hev_gain_model": null,
+                "hit_min_amplitude": "list-to-array://xedocs://hit_thresholds?as_list=True&attr=value&detector=tpc&run_id=plugin.run_id&sort=pmt&version=v1",
+                "max_veto_value": null,
+                "n_tpc_pmts": 494,
+                "pmt_pulse_filter": null,
+                "save_outside_hits": [
+                    3,
+                    20
+                ],
+                "tail_veto_duration": 3000000,
+                "tail_veto_pass_extend": 3,
+                "tail_veto_pass_fraction": 0.05,
+                "tail_veto_resolution": 1000,
+                "tail_veto_threshold": 0
+            }
+        ],
+        "raw_records_mv": [
+            "DAQReader",
+            "0.0.0",
+            {}
+        ]
+    },
+    "lineage_hash": "5phmsdakup",
+    "run_id": "046617",
+    "start": 1659676182000000000,
+    "strax_version": "1.6.0",
+    "writing_ended": 1706310265.0206997,
+    "writing_started": 1706310258.7798774
+}

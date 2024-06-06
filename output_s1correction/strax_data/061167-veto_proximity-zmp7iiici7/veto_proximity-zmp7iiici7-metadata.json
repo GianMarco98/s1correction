@@ -1,0 +1,293 @@
+{
+    "chunk_target_size_mb": 200,
+    "chunks": [
+        {
+            "chunk_i": 0,
+            "end": 1712244925786264320,
+            "filename": "veto_proximity-zmp7iiici7-000000",
+            "filesize": 2977759,
+            "first_endtime": 1712243117014239310,
+            "first_time": 1712243117011535522,
+            "last_endtime": 1712244921235778760,
+            "last_time": 1712244921232261812,
+            "n": 96694,
+            "nbytes": 10829728,
+            "run_id": "061167",
+            "start": 1712243117000000000,
+            "subruns": null
+        }
+    ],
+    "compressor": "blosc",
+    "data_kind": "events",
+    "data_type": "veto_proximity",
+    "dtype": "[(('Start time since unix epoch [ns]', 'time'), '<i8'), (('Exclusive end time since unix epoch [ns]', 'endtime'), '<i8'), (('Duration of event overlapping with \"busy\"-veto [ns]', 'veto_busy_overlap'), '<i8'), (('Time (absolute value) to previous \"busy\"-veto from \"time\" of event [ns]', 'time_to_previous_busy'), '<i8'), (('Time (absolute value) to next \"busy\"-veto from \"endtime\" of event [ns]', 'time_to_next_busy'), '<i8'), (('Duration of event overlapping with \"busy_he\"-veto [ns]', 'veto_busy_he_overlap'), '<i8'), (('Time (absolute value) to previous \"busy_he\"-veto from \"time\" of event [ns]', 'time_to_previous_busy_he'), '<i8'), (('Time (absolute value) to next \"busy_he\"-veto from \"endtime\" of event [ns]', 'time_to_next_busy_he'), '<i8'), (('Duration of event overlapping with \"hev\"-veto [ns]', 'veto_hev_overlap'), '<i8'), (('Time (absolute value) to previous \"hev\"-veto from \"time\" of event [ns]', 'time_to_previous_hev'), '<i8'), (('Time (absolute value) to next \"hev\"-veto from \"endtime\" of event [ns]', 'time_to_next_hev'), '<i8'), (('Duration of event overlapping with \"straxen_deadtime\"-veto [ns]', 'veto_straxen_deadtime_overlap'), '<i8'), (('Time (absolute value) to previous \"straxen_deadtime\"-veto from \"time\" of event [ns]', 'time_to_previous_straxen_deadtime'), '<i8'), (('Time (absolute value) to next \"straxen_deadtime\"-veto from \"endtime\" of event [ns]', 'time_to_next_straxen_deadtime'), '<i8')]",
+    "end": 1712244925786264320,
+    "lineage": {
+        "aqmon_hits": [
+            "AqmonHits",
+            "1.1.2",
+            {
+                "baseline_samples_aqmon": 10,
+                "hit_min_amplitude_aqmon": [
+                    [
+                        50,
+                        [
+                            800
+                        ]
+                    ],
+                    [
+                        1500,
+                        [
+                            797,
+                            798,
+                            801,
+                            802,
+                            803,
+                            804,
+                            805,
+                            806,
+                            807
+                        ]
+                    ],
+                    [
+                        0,
+                        [
+                            799
+                        ]
+                    ]
+                ]
+            }
+        ],
+        "event_basics": [
+            "EventBasics",
+            "1.3.3",
+            {
+                "allow_posts2_s1s": false,
+                "electron_drift_velocity": "cmt://electron_drift_velocity?run_id=plugin.run_id&version=ONLINE",
+                "event_s1_min_coincidence": 2,
+                "force_alt_s2_in_max_drift_time": true,
+                "force_main_before_alt": false,
+                "max_drift_length": 148.6515
+            }
+        ],
+        "events": [
+            "Events",
+            "0.1.1",
+            {
+                "electron_drift_velocity": "cmt://electron_drift_velocity?run_id=plugin.run_id&version=ONLINE",
+                "event_s1_min_coincidence": 2,
+                "exclude_s1_as_triggering_peaks": true,
+                "left_event_extension": 250000,
+                "max_drift_length": 148.6515,
+                "right_event_extension": 250000,
+                "s1_min_coincidence": 2,
+                "trigger_max_competing": 7,
+                "trigger_min_area": 100
+            }
+        ],
+        "lone_hits": [
+            "Peaklets",
+            "1.1.0",
+            {
+                "gain_model": "cmt://to_pe_model?run_id=plugin.run_id&version=ONLINE",
+                "hit_min_amplitude": "cmt://hit_thresholds_tpc?run_id=plugin.run_id&version=ONLINE",
+                "n_top_pmts": 253,
+                "n_tpc_pmts": 494,
+                "peak_left_extension": 30,
+                "peak_min_pmts": 2,
+                "peak_right_extension": 200,
+                "peak_split_filter_wing_width": 70,
+                "peak_split_gof_threshold": [
+                    null,
+                    [
+                        [
+                            0.5,
+                            1.0
+                        ],
+                        [
+                            6.0,
+                            0.4
+                        ]
+                    ],
+                    [
+                        [
+                            2.5,
+                            1.0
+                        ],
+                        [
+                            5.625,
+                            0.4
+                        ]
+                    ]
+                ],
+                "peak_split_iterations": 20,
+                "peak_split_min_area": 40.0,
+                "peaklet_gap_threshold": 700,
+                "peaklet_max_duration": 10000000,
+                "saturation_correction_on": true,
+                "saturation_min_reference_length": 20,
+                "saturation_reference_length": 100,
+                "sum_waveform_top_array": true,
+                "tight_coincidence_window_left": 50,
+                "tight_coincidence_window_right": 50
+            }
+        ],
+        "merged_s2s": [
+            "MergedS2s",
+            "1.0.2",
+            {
+                "gain_model": "cmt://to_pe_model?run_id=plugin.run_id&version=ONLINE",
+                "merge_without_s1": true,
+                "n_top_pmts": 253,
+                "n_tpc_pmts": 494,
+                "s2_merge_gap_thresholds": [
+                    [
+                        1.7,
+                        26500.0
+                    ],
+                    [
+                        4.0,
+                        2600.0
+                    ],
+                    [
+                        5.0,
+                        0.0
+                    ]
+                ],
+                "s2_merge_max_duration": 50000,
+                "sum_waveform_top_array": true
+            }
+        ],
+        "peak_basics": [
+            "PeakBasics",
+            "0.1.4",
+            {
+                "n_top_pmts": 253
+            }
+        ],
+        "peak_positions": [
+            "PeakPositionsNT",
+            "0.0.0",
+            {
+                "default_reconstruction_algorithm": "mlp"
+            }
+        ],
+        "peak_positions_cnn": [
+            "PeakPositionsCNN",
+            "0.0.1",
+            {
+                "min_reconstruction_area": 10,
+                "n_top_pmts": 253,
+                "tf_model_cnn": "tf://resource://cmt://cnn_model?fmt=abs_path&run_id=plugin.run_id&version=ONLINE"
+            }
+        ],
+        "peak_positions_gcn": [
+            "PeakPositionsGCN",
+            "0.0.1",
+            {
+                "min_reconstruction_area": 10,
+                "n_top_pmts": 253,
+                "tf_model_gcn": "tf://resource://cmt://gcn_model?fmt=abs_path&run_id=plugin.run_id&version=ONLINE"
+            }
+        ],
+        "peak_positions_mlp": [
+            "PeakPositionsMLP",
+            "0.0.0",
+            {
+                "min_reconstruction_area": 10,
+                "n_top_pmts": 253,
+                "tf_model_mlp": "tf://resource://cmt://mlp_model?fmt=abs_path&run_id=plugin.run_id&version=ONLINE"
+            }
+        ],
+        "peak_proximity": [
+            "PeakProximity",
+            "0.4.0",
+            {
+                "min_area_fraction": 0.5,
+                "nearby_window": 10000000,
+                "peak_max_proximity_time": 100000000
+            }
+        ],
+        "peaklet_classification": [
+            "PeakletClassification",
+            "3.0.3",
+            {
+                "n_top_pmts": 253,
+                "s1_flatten_threshold_aft": [
+                    0.6,
+                    100
+                ],
+                "s1_max_rise_time_post100": 200,
+                "s1_min_coincidence": 2,
+                "s1_risetime_aft_parameters": [
+                    -1,
+                    2.6
+                ],
+                "s1_risetime_area_parameters": [
+                    50,
+                    80,
+                    12
+                ],
+                "s2_min_pmts": 4
+            }
+        ],
+        "peaks": [
+            "Peaks",
+            "0.1.2",
+            {
+                "merge_without_s1": true
+            }
+        ],
+        "pulse_counts": [
+            "PulseProcessing",
+            "0.2.3",
+            {
+                "baseline_samples": 40,
+                "hev_gain_model": null,
+                "hit_min_amplitude": "cmt://hit_thresholds_tpc?run_id=plugin.run_id&version=ONLINE",
+                "max_veto_value": null,
+                "n_tpc_pmts": 494,
+                "pmt_pulse_filter": null,
+                "save_outside_hits": [
+                    3,
+                    20
+                ],
+                "tail_veto_duration": 3000000,
+                "tail_veto_pass_extend": 3,
+                "tail_veto_pass_fraction": 0.05,
+                "tail_veto_resolution": 1000,
+                "tail_veto_threshold": 0
+            }
+        ],
+        "raw_records_mv": [
+            "DAQReader",
+            "0.0.0",
+            {}
+        ],
+        "veto_intervals": [
+            "VetoIntervals",
+            "1.1.1",
+            {
+                "max_veto_window": 7200000000000
+            }
+        ],
+        "veto_proximity": [
+            "VetoProximity",
+            "2.2.0",
+            {
+                "event_window_fields": [
+                    "time",
+                    "endtime"
+                ],
+                "time_no_aqmon_veto_found": 3600000000000,
+                "veto_proximity_window": 300000000000
+            }
+        ]
+    },
+    "lineage_hash": "zmp7iiici7",
+    "run_id": "061167",
+    "start": 1712243117000000000,
+    "strax_version": "1.6.2",
+    "writing_ended": 1713358735.030948,
+    "writing_started": 1713358734.2259712
+}
